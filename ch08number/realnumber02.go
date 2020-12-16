@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"math"
+)
 
 func main() {
 	var a float64 = 10.0
@@ -9,12 +12,13 @@ func main() {
 		a = a - 0.1
 	}
 
+	epsilon := 10e-14
 	fmt.Println(a)
-	fmt.Println(a == 9.0)
+	fmt.Println(math.Abs(a-9.0) <= epsilon)
 }
 
 /*
-go run realnumber01.go
+go run realnumber02.go
 9.000000000000004
-false
+true
 */
