@@ -1,0 +1,25 @@
+[
+  {
+    "id": 1,
+    "title": "Hello world",
+    "author": {
+      "name": "Marial",
+      "email": "marial@email.com"
+    },
+    "content": "Hello~",
+    "recommends": [
+      "John",
+      "Andrew"
+    ],
+    "comments": [
+      {
+        "id": 1,
+        "author": {
+          "name": "Andrew",
+          "email": "andrew@email.com"
+        },
+        "content": "Hello Maria"
+      }
+    ]
+  }
+]
