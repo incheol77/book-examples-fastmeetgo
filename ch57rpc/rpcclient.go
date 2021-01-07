@@ -31,7 +31,4 @@ func main() {
 	sumCall := client.Go("Calc.Sum", args, reply, nil)
 	<-sumCall.Done
 	fmt.Println(reply.C)
-
-	args := &Args{1, 2}
-	reply := new()
 }
